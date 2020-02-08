@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>library management system</title>
+      <style type="text/css">
+       body{
+    background-image:url("https://previews.123rf.com/images/vimvertigo/vimvertigo1603/vimvertigo160300579/54296765-row-of-books-grungy-blue-background-free-copy-space-vintage-old-hardback-books-on-wooden-shelf-on-th.jpg");
+        background-size:cover;
+        backgrond-attachment: fixed;
+     }
+
+
+
+          .content {
+  position: relative;
+}
+#right-panel-link1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#right-panel-link2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#right-panel-link3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#right-panel-link4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#right-panel-link5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#right-panel-link6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+      </style>
+  </head>
+  <body>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">library management system</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../">log out</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          more
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">About us</a>
+          <a class="dropdown-item" href="#">contact us</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+<div class="content">
+  <h2>  ADD BOOK IN LIBRARY</h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/addbook">
+  <button type="submit" class="btn btn-primary btn-lg  " id="right-panel-link1" >addbook</button>
+        </form>
+</div>
+
+    <div class="content">
+  <h2>REMOVE BOOK FROM LIBRARY</h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/removebook">
+  <button type="submit" class="btn btn-primary btn-lg " id="right-panel-link2" >remove book</button>
+        </form>
+</div>
+
+
+    <div class="content">
+  <h2>ADD STUDENT </h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/addstudent">
+  <button type="submit" class="btn btn-primary btn-lg " id="right-panel-link3" >addstudent</button>
+        </form>
+</div>
+
+
+    <div class="content">
+  <h2>ISSUE BOOK</h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/issuebook">
+  <button type="submit" class="btn btn-primary btn-lg " id="right-panel-link4" >issue book</button>
+        </form>
+</div>
+
+
+    <div class="content">
+  <h2>CHECK FINES</h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/checkfine">
+  <button type="submit" class="btn btn-primary btn-lg " id="right-panel-link5" >check fine</button>
+        </form>
+</div>
+
+
+  <div class="content">
+  <h2>SHOW BOOKS</h2>
+  <div>
+    <div range-slider floor="0" ceiling="19" dragstop="true" ng-model-low="lowerValue" ng-model-high="upperValue"></div>
+  </div>
+    <form action="/showbooks">
+  <button type="submit" class="btn btn-primary btn-lg  ml-5" id="right-panel-link6" >show books</button>
+        </form>
+</div>
+
+
+
+
+
+
+
+
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
